@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/alessandrociurlo72/CMPSBase</RepositoryUrl>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageId>CMPSBase</PackageId>
+	  <PackageVersion>1.0.0.1</PackageVersion>
+	  <Title>Test base library for cryptography</Title>
+	  <Authors>Alessandro Ciurlo</Authors>
+	  <PackageLicenseExpression>
+		  MS-PL
+	  </PackageLicenseExpression>
+	  <PackageProjectUrl>
+		  https://github.com/alessandrociurlo72/CMPSBase
+	  </PackageProjectUrl>
+	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		  <PackageReleaseNotes>
+			  Test base library for cryptography
+		  </PackageReleaseNotes>
+		  <Description>
+			  Test base library for cryptography
+		  </Description>
+		  <Copyright>
+			  Copyright © 2023 Alessandro Ciurlo
+		  </Copyright>
+  </PropertyGroup>
+	
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.0" />
+  </ItemGroup>
+	
+
+  <ItemGroup>
+    <None Update="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	
+    </None>
+	  <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>
